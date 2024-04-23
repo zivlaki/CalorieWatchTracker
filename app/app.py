@@ -12,23 +12,36 @@ with open(model_path, 'rb') as f:
 
 custom_styles = {
     'body': {
+        'position' : 'absolute',
         'background-image': 'url("https://www.researchgate.net/profile/Li-Mingtao-2/publication/335483097/figure/fig3/AS:934217085100032@1599746118459/A-general-architecture-of-XGBoost.ppm")',
         'background-size': 'cover',
+        'margin' : '0',
+        'padding' : '0',
+        'min-height' : '100vh',
+        'min-width' : '100vw',
         'font-family': 'Arial, sans-serif',
     },
     'h1': {
-        'color': 'blue',
-        'background-color' : 'gray',
+        'color': '#EFCA08',
+        'position' : 'fixed',
+        'top' : '0',
+        'min-width' : '100vw',
+        'min-height': '10vh',
+        'background-color' : '#1D2F6F',
         'text-align': 'center',
-        'margin-top': '50px',
+        'padding-top' : '15px'
     },
     'open-modal-button': {
-        'display': 'flex',
-        'background-color' : 'gray',
+        'position' : 'fixed',
+        'top' : '0vh',
+        'left' : '48vw',
+        'background-color' : '#EFCA08',
         'justify-content': 'center',
         'align-items': 'center', 
-        'margin': '50px auto', 
-        'max-width': '200px',  
+        'margin': '200px auto', 
+        'min-width': '140px', 
+        'min-height' : '70px',
+        'box-shadow' : '5px 5px'
     },
     'modal-content': {
         'background-color': '#ffffff',
@@ -36,11 +49,17 @@ custom_styles = {
         'position' : 'center',
     },
     'accuracy-output': {
-        'background-color': '#e3f2fd',  
+        'background-color': '#1D2F6F',  
+        'position' : 'fixed',
+        'bottom' : '0px',
+        'width' : '100vw',
+        'min-height' : '15vh',
         'padding': '10px',
         'margin-top': '20px',
         'text-align': 'center',
         'border-radius': '5px',
+        'color' : '#EFCA08',
+        'font-size': '30px'
     }
 }
 
